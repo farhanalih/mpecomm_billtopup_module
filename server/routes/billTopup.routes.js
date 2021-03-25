@@ -11,5 +11,6 @@ router.get('/', indexCtrl.billTopup.readBillTopup);
 router.post('/insertbillTopup',indexCtrl.billTopup.addBillTopup);
 router.put('/updatebillTopup/:bito_id',indexCtrl.billTopup.editBillTopup);
 router.delete('/deletebillTopup/:bito_id',indexCtrl.billTopup.deleteBillTopup);
+router.get('/:bito_id', indexCtrl.billTopup.byBitoId);
 
 export default router;
